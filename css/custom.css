@@ -1,0 +1,14 @@
+.info {
+    min-height: 50vh;
+}
+
+.qr-code {
+    max-width: 50vh;
+    width: 100%;
+}
+
+#my-qr-link {
+    cursor: pointer;
+    width: 100%;
+    word-wrap: break-word;
+}
