@@ -303,7 +303,7 @@
 								<div class="block-content">
 
 									<!--Row-->
-									<div class="row">
+									<div class="row page-number-navigation">
 										<div class="col-md-12">
 											<span class="page-number emph-1">- 1/5 -</span>
 										</div>
@@ -872,7 +872,7 @@
 								<div class="block-content">
 
 									<!--Row-->
-									<div class="row">
+									<div class="row page-number-navigation">
 										<div class="col-md-12">
 											<span class="page-number emph-1">- 2/5 -</span>
 										</div>
@@ -1190,7 +1190,7 @@
 								<div class="block-content">
 
 									<!--Row-->
-									<div class="row">
+									<div class="row page-number-navigation">
 										<div class="col-md-12">
 											<span class="page-number emph-1">- 3/5 -</span>
 										</div>
@@ -1336,7 +1336,7 @@
 								<div class="block-content">
 
 									<!--Row-->
-									<div class="row">
+									<div class="row page-number-navigation">
 										<div class="col-md-12">
 											<span class="page-number emph-1">- 4/5 -</span>
 										</div>
@@ -1430,7 +1430,7 @@
 								<div class="block-content">
 
 									<!--Row-->
-									<div class="row">
+									<div class="row page-number-navigation">
 										<div class="col-md-12">
 											<span class="page-number emph-1">- 5/5 -</span>
 										</div>
@@ -1535,6 +1535,53 @@
 			el.classList.toggle('expanded')
 			el.classList.toggle('collapsed')
 		}
+
+		$('div.page-number-navigation').on('click', function(){
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		})
+
+		// var availableTabs = []
+		// $('#main-nav ul li').each(function(){
+		// 	availableTabs.push($(this).find('a').attr('href'))
+		// });
+
+		// console.log(availableTabs)
+		// $('#main-nav ul li').on('click', function() {
+		// 	console.log(this)
+		// 	console.log($(this).find('a').attr('href') == '')
+		// 	if($(this).hasClass('active')) {
+		// 		var myTab = $(this).find('a.active').attr('href')
+		// 		// var myTab = $(this).attr('a');
+		// 		if(myTab) {
+		// 			console.log(availableTabs.indexOf(myTab))
+		// 			console.log(myTab)
+		// 		}
+		// 	}
+		// });
+
+		// $('div.page-number-navigation').on('click', function(){
+		// 	currTab = $('#main-nav ul li').find('a.active')
+		// 	currTabHref = currTab.attr('href')
+		// 	currTabIdx = availableTabs.indexOf(currTabHref)
+		// 	currTabIdxNext = currTabIdx + 1 || availableTabs.length - 1
+		// 	nextTabHref = availableTabs[currTabIdxNext]
+
+		// 	currTab.parent().removeClass("active")
+		// 	currTab.removeClass("active")
+		// 	$(`section[id*="${currTabHref.replace('#','')}"]`).removeClass("active")
+
+		// 	// $("#main-nav ul li a").
+		// 	$(`a[href*="${nextTabHref}"]`).parent().attr("class","active")
+		// 	$(`a[href*="${nextTabHref}"]`).attr("class","active")
+		// 	$(`section[id*="${nextTabHref.replace('#','')}"]`).attr("class","active")
+
+
+
+
+		// 	// console.log(currTab.parent())
+
+		// 	console.log()
+		// })
 	</script>
 
 
