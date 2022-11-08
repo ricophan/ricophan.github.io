@@ -59,11 +59,13 @@
 						<div class="main-header">
 
 							<!--Profile image-->
-							<div class="img-profile">
-								<img src="img/profile.jpg" alt="" />
+							<div id="expand-container" class="img-profile">
+								<div id="expand-contract" class="expanded">
+									<img src="img/profile.jpg" alt="" onclick="javascript:expand_contract()"/>
+								</div>
 
 								<div class="name-profile t-center">
-									<h5 class="uppercase">Rico</h5>
+									<h5 class="uppercase" onclick="javascript:expand_contract()">Rico</h5>
 								</div>
 
 							</div>
@@ -1525,6 +1527,13 @@
 			var divID = document.getElementById("my-qr-link")
 			var copyText = divID.innerText || divID.textContent || divID.innerHTML;
 			navigator.clipboard.writeText(copyText);
+		}
+
+		// Expand and Collapse Image
+		function expand_contract() {
+			const el = document.getElementById("expand-contract")
+			el.classList.toggle('expanded')
+			el.classList.toggle('collapsed')
 		}
 	</script>
 

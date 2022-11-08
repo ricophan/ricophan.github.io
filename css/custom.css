@@ -12,3 +12,22 @@
     width: 100%;
     word-wrap: break-word;
 }
+
+.main-title h1 {
+    line-height: .9em;
+}
+
+@media only screen and (max-width: 959px){
+    #expand-container {
+        overflow: hidden;
+    }
+    
+    #expand-contract {
+        margin-top: -94.5%;
+        transition: all 1s;
+    }
+    
+    #expand-contract.expanded {
+        margin-top: 0;
+    }
+}
