@@ -364,6 +364,7 @@ p.lead-intro {
 	font-style:italic;
 	font-size:15px;
 	line-height:27px;
+    text-align: justify;
 }
 
 img.signature{
@@ -579,6 +580,11 @@ img.signature{
     position: relative;
 	text-align:left;
 	width:56%;
+    text-align: justify;
+}
+
+.timeline .timeline-inner .detail ul.detail-bullet {
+  list-style-type: square !important;
 }
 
 .timeline .timeline-inner .name h4 {
@@ -678,6 +684,17 @@ img.signature{
     position: relative;
     text-align: right;
     width: 46%;
+}
+
+.listing-large .listing-event .data.left ul.detail-bullet{
+    /* float: left; */
+    /* font-size: 18px; */
+    /* font-weight: 300; */
+    padding-right: 5px;
+    position: relative;
+    text-align: right;
+    /* width: 46%; */
+    list-style-type: square !important;
 }
 
 .listing-large .listing-event .data.right {
